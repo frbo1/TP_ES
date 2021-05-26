@@ -6,7 +6,7 @@
    * Consultar avaliação do professor;
    * Consultar informações do professor (website);
    * Adicionar prova antiga;
-   * Consultar prova antiga; P
+   * Consultar prova antiga; 
 * Tecnologias:
    * Front-end: HTML + CSS + Javascript;
    * Back-end: Django;
