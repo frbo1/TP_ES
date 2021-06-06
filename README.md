@@ -15,3 +15,18 @@
    * Back-end: Django;
    * Banco de dados: SQLite;
    * Controle de versão: Git;
+
+* User Stories:
+  * História: Como usuário do site, eu gostaria de avaliar o professor 
+    * Tarefas:
+      * Projetar e testar interface web
+  * História: Como usuário, eu gostaria de consultar as avaliações do professor
+    * Tarefas:
+  * História: Como usuário, eu gostaria de verificar as informações do professor
+    * Tarefas:
+  * História: Como admin, eu gostaria de remover avaliações
+    * Tarefas:
+  * História: Como admin, eu gostaria de editar as informações de um professor
+    * Tarefas:
+  * História: Como admin, eu gostaria de adicionar ou remover um professor
+    * Tarefas               
