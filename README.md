@@ -16,7 +16,18 @@
    * Banco de dados: SQLite;
    * Controle de versão: Git;
 
-* User Stories:
+* Backlog do produto:
+  * História: Como usuário, eu gostaria de avaliar o professor 
+  * História: Como usuário, eu gostaria de consultar as avaliações do professor
+  * História: Como usuário, eu gostaria de verificar as informações do professor
+  * História: Como usuário, eu gostaria de pesquisar um professor específico
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
+  * História: Como admin, eu gostaria de remover avaliações
+  * História: Como admin, eu gostaria de editar as informações de um professor
+  * História: Como admin, eu gostaria de adicionar ou remover um professor
+  * História: Como admin, eu gostaria de banir um usuário               
+
+* Backlog do sprint:
   * História: Como usuário, eu gostaria de avaliar o professor 
     * Tarefas:
       * Projetar e testar interface web
@@ -28,14 +39,3 @@
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
       * Implementar sistema de busca
-  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
-    * Tarefas:
-      * Implementar menu de navegação
-  * História: Como admin, eu gostaria de remover avaliações
-    * Tarefas:
-  * História: Como admin, eu gostaria de editar as informações de um professor
-    * Tarefas:
-  * História: Como admin, eu gostaria de adicionar ou remover um professor
-    * Tarefas:
-  * História: Como admin, eu gostaria de banir um usuário
-    * Tarefas:                 
