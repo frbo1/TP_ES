@@ -22,11 +22,15 @@
       * Projetar e testar interface web
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
+      * Implementar sistema de avaliação com estrela
   * História: Como usuário, eu gostaria de verificar as informações do professor
     * Tarefas:
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
       * Implementar sistema de busca
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
+    * Tarefas:
+      * Implementar menu de navegação
   * História: Como admin, eu gostaria de remover avaliações
     * Tarefas:
   * História: Como admin, eu gostaria de editar as informações de um professor
