@@ -17,7 +17,7 @@
    * Controle de versão: Git;
 
 * User Stories:
-  * História: Como usuário do site, eu gostaria de avaliar o professor 
+  * História: Como usuário, eu gostaria de avaliar o professor 
     * Tarefas:
       * Projetar e testar interface web
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
@@ -29,4 +29,6 @@
   * História: Como admin, eu gostaria de editar as informações de um professor
     * Tarefas:
   * História: Como admin, eu gostaria de adicionar ou remover um professor
-    * Tarefas               
+    * Tarefas:
+  * História: Como admin, eu gostaria de banir um usuário
+    * Tarefas:                 
