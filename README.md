@@ -25,17 +25,34 @@
   * História: Como admin, eu gostaria de remover avaliações
   * História: Como admin, eu gostaria de editar as informações de um professor
   * História: Como admin, eu gostaria de adicionar ou remover um professor
-  * História: Como admin, eu gostaria de banir um usuário               
 
 * Backlog do sprint:
   * História: Como usuário, eu gostaria de avaliar o professor 
     * Tarefas:
-      * Projetar e testar interface web
+      * Projetar e testar a interface web;
+      * Instalar banco de dados, projetar e criar tabelas;
+      * Implementar sistema de avaliação da didática ("com estrela"); 
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); 
+      * Implementar sistema de envio de comentários sobre o professor;
+      * Implementar a interface web;
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
-      * Implementar sistema de avaliação com estrela
+      * Projetar e testar a interface web;
+      * Implementar sistema de avaliação da didática ("com estrela"); 
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); 
+      * Implementar menu pull down ao clicar sobre a foto do professor (mostrando os comentários já existentes);
+      * Implementar a interface web;
   * História: Como usuário, eu gostaria de verificar as informações do professor
     * Tarefas:
+      * Projetar e testar a interface web;
+      * Adicionar foto do professor (tirado do site do DCC);
+      * Adicionar link para página pessoal do professor;
+      * Implementar a interface web;
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
-      * Implementar sistema de busca
+      * Implementar sistema de busca;
+      * Projetar e testar a interface do sistema de busca;
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
+    * Tarefas:
+      * Projetar e testar a interface web;
+      * Implementar a interface web;
