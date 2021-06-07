@@ -24,6 +24,9 @@
     * Tarefas:
   * História: Como usuário, eu gostaria de verificar as informações do professor
     * Tarefas:
+  * História: Como usuário, eu gostaria de pesquisar um professor específico
+    * Tarefas: 
+      * Implementar sistema de busca
   * História: Como admin, eu gostaria de remover avaliações
     * Tarefas:
   * História: Como admin, eu gostaria de editar as informações de um professor
