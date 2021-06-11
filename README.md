@@ -1,4 +1,4 @@
-# TP_ES
+# O Planilhão 
 
 * Grupo:
    * Filipe Rodrigues Batista de Oliveira (2018055091)
@@ -42,9 +42,9 @@
       * Implementar sistema de avaliação da relação com alunos ("com coração"); 
       * Implementar menu pull down ao clicar sobre a foto do professor (mostrando os comentários já existentes);
       * Implementar a interface web;
-  * História: Como usuário, eu gostaria de verificar as informações do professor
+  * História: Como usuário, eu gostaria de verificar as informações do professor [Filipe]
     * Tarefas:
-      * Projetar e testar a interface web;
+      * Projetar e testar a interface web; 
       * Adicionar foto do professor (tirado do site do DCC);
       * Adicionar link para página pessoal do professor;
       * Implementar a interface web;
@@ -52,7 +52,7 @@
     * Tarefas: 
       * Implementar sistema de busca;
       * Projetar e testar a interface do sistema de busca;
-  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação [Filipe]
     * Tarefas:
       * Projetar e testar a interface web;
       * Implementar a interface web;
