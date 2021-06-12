@@ -1,9 +1,15 @@
+header {
+
+    border-bottom: solid black;
+}
+
 main {
 
     background-color: lightyellow;
 }
 
 h1 {
+
     text-align: center;
     padding: 40px 150px 20px 150px;
     font-family: cursive;
@@ -42,7 +48,6 @@ textarea {
 
     display: block;
 }
-
 
 footer p {
 
