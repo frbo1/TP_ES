@@ -1,0 +1,25 @@
+1) Ligar Maquina Virtual
+venv/Scripts activate
+
+2) Ligar o Server:
+em /TP_ES:
+python manage.py runserver
+
+Link para o site:
+http://127.0.0.1:8000 -> redireciona pra pagina principal
+
+http://127.0.0.1:8000/planilhao -> pagina principal
+
+http://127.0.0.1:8000/admin -> admin pode adicionar/remover usuarios, adicionar/remover professores
+usuario: admin
+senha  : 1234
+
+3) Construindo Dataset de Posts (cada post seria um Professor):
+venv/TP_ES/planilhao/models.py
+
+4) Templates:
+venv/TP_ES/planilhao/templates/planilhao/
+obs: eh feio assim mesmo, dentro de templates TEM QUE TER planilhao.
+- base.html: base do post
+- post_detail.html: detalhes do post (dados do prof e talz)
+- post_list: pagina inicial com a lista dos professores
