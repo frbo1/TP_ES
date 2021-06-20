@@ -37,6 +37,7 @@
       * Implementar a interface web;
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
+      * Popular banco de dados com as avaliações feitas no planilhão;
       * Projetar e testar a interface web;
       * Implementar sistema de avaliação da didática ("com estrela"); 
       * Implementar sistema de avaliação da relação com alunos ("com coração"); 
@@ -45,8 +46,9 @@
   * História: Como usuário, eu gostaria de verificar as informações do professor [Filipe]
     * Tarefas:
       * Projetar e testar a interface web; 
-      * Adicionar foto do professor (tirado do site do DCC);
+      * Adicionar nome e foto do professor (tirado do site do DCC);
       * Adicionar link para página pessoal do professor;
+      * Adicionar disciplinas lecionadas pelo professor;
       * Implementar a interface web;
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
