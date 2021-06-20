@@ -51,5 +51,16 @@ with open('C:\\Users\\User\\Documents\\TP_ES\\resources\\data2.txt') as file:
 #prof_id = cursor.execute(""" SELECT id FROM professores WHERE name = (?) """, (name,))
 #cursor.execute(""" INSERT INTO comentarios (prof_id,comment) VALUES (?,?) """, (prof_id,str(row[i])))
 
+
+"""
+url = "C:\\Users\\User\\Documents\\TP_ES\\resources\\fotos-professores\\marcos3.jpeg"
+with open(url, 'rb') as f:
+    photo = f.read()
+    #cursor.execute...
+    conn.commit()
+"""
+#cursor.execute(""" UPDATE professores SET photo = (?) WHERE name = (?)""", (photo,'Marcos Augusto Menezes Vieira'))
+
+
 cursor.close()
 conn.close()
