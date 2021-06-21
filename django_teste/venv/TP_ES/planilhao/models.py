@@ -3,7 +3,7 @@ from django.db import models
 from django.urls import reverse
 
 # Create your models here.
-class Post(models.Model):
+"""class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -18,4 +18,16 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("planilhao:detail", kwargs={"slug": self.slug})
+        return reverse("planilhao:detail", kwargs={"slug": self.slug})"""
+
+class Professor(models.Model):
+    nome = models.CharField(max_length=155)
+    content = models.TextField()
+    slug = models.SlugField(max_length=255)
+
+    def __str__(self):
+        return self.nome
+
+    def get_absolute_url(self):
+        return reverse("planilhao:detail", args=[self.slug])
+        

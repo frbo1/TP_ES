@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Professores DCC UFMG</h1>
+              <p class="lead text-muted">Descrição do site</p>
+              <p>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="album py-5 bg-light">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            {% for prof in profs %}
+            <div class="col">
+                <div class="card shadow-sm">
+                    {% load static %}
+                    <img src="{% static 'image/default.png' %}" alt="My image">
+                        <div class="card-body">
+                            <p>{{prof.nome}}</p>
+                            <p> Didática: </p>
+                            <form>
+                                <input type='radio' id='nota1' name='didatica' value='1'>
+	                            <label for='nota1'> ⭐ </label>
+                                <input type='radio' id='nota2' name='didatica' value='2'>
+	                            <label for='nota2'> ⭐ </label>
+                                <input type='radio' id='nota3' name='didatica' value='3'>
+	                            <label for='nota3'> ⭐ </label>
+                            </form> 
+                                <p> Relação com os alunos: </p>
+                            <form>
+                                <input type='radio' id='nota1' name='relacao' value='1'>
+	                            <label for='nota1'> ❤️  </label>
+                                <input type='radio' id='nota2' name='relacao' value='2'>
+	                            <label for='nota2'> ❤️  </label>
+                                <input type='radio' id='nota3' name='relacao' value='3'>
+	                            <label for='nota3'> ❤️  </label>
+                            </form>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="{{prof.get_absolute_url}}" role="button" class="btn btn-primary btn-sm">Comentários</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+</main>
+{% endblock content %}

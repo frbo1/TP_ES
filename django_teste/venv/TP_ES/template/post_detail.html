@@ -1,4 +1,4 @@
-{% extends "planilhao/base.html" %} 
+{% comment %} {% extends "planilhao/base.html" %} 
 
 {% block title %}{{ post.title }}{% endblock %} 
 
@@ -8,4 +8,4 @@
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
     {{ post.body|linebreaks }}
-{% endblock %}
+{% endblock %} {% endcomment %}

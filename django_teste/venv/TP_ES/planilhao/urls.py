@@ -5,6 +5,6 @@ from . import views
 app_name = "planilhao"
 
 urlpatterns = [
-    path("", views.PostListView.as_view(), name="list"),
-    path("<slug:slug>/", views.PostDetailView.as_view(), name="detail"),
+    path('', views.home, name="homepage"),
+    path("<slug:slug>/", views.detalhe_professor, name="detail"),
 ]
