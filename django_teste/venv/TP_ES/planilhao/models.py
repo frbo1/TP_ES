@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
+from django.conf import settings
 
 # Create your models here.
 """class Post(models.Model):
@@ -25,9 +26,30 @@ class Professor(models.Model):
     content = models.TextField()
     slug = models.SlugField(max_length=255)
 
+    class Meta:
+        ordering = ("nome",)
+
     def __str__(self):
         return self.nome
 
     def get_absolute_url(self):
         return reverse("planilhao:detail", args=[self.slug])
-        
+
+    
+
+class Comentarios(models.Model):
+    professor = models.ForeignKey(Professor, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    content = models.TextField(max_length=500)
+    criado = models.DateTimeField(auto_now_add=True)
+    atualizado = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ("-atualizado",)
+
+    def get_absolute_url(self):
+        return reverse("planilhao:detail", args=[self.slug])
+
+    

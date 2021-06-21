@@ -13,3 +13,4 @@ class postAdmin(admin.ModelAdmin):
 from . import models
 
 admin.site.register(models.Professor)
+admin.site.register(models.Comentarios)
