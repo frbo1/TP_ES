@@ -29,32 +29,32 @@
 * Backlog do sprint:
   * História: Como usuário, eu gostaria de avaliar o professor 
     * Tarefas:
-      * Projetar e testar a interface web;
-      * Instalar banco de dados, projetar e criar tabelas;
-      * Implementar sistema de avaliação da didática ("com estrela"); 
-      * Implementar sistema de avaliação da relação com alunos ("com coração"); 
-      * Implementar sistema de envio de comentários sobre o professor;
-      * Implementar a interface web;
+      * Projetar e testar a interface web; [Filipe]
+      * Instalar banco de dados, projetar e criar tabelas; [Jackson]
+      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe]
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe]
+      * Implementar sistema de envio de comentários sobre o professor; [Raphael]
+      * Implementar a interface web; [Gabriel]
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
-      * Popular banco de dados com as avaliações feitas no planilhão;
-      * Projetar e testar a interface web;
-      * Implementar sistema de avaliação da didática ("com estrela"); 
-      * Implementar sistema de avaliação da relação com alunos ("com coração"); 
-      * Implementar menu pull down ao clicar sobre a foto do professor (mostrando os comentários já existentes);
-      * Implementar a interface web;
-  * História: Como usuário, eu gostaria de verificar as informações do professor [Filipe]
+      * Popular banco de dados com as avaliações feitas no planilhão; [Jackson]
+      * Projetar e testar a interface web; [Filipe]
+      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe]
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe]
+      * Implementar menu pull down ao clicar sobre a foto do professor (mostrando os comentários já existentes); [Raphael]
+      * Implementar a interface web; [Gabriel]
+  * História: Como usuário, eu gostaria de verificar as informações do professor 
     * Tarefas:
-      * Projetar e testar a interface web; 
-      * Adicionar nome e foto do professor (tirado do site do DCC);
-      * Adicionar link para página pessoal do professor;
-      * Adicionar disciplinas lecionadas pelo professor;
-      * Implementar a interface web;
+      * Projetar e testar a interface web; [Filipe]
+      * Adicionar nome e foto do professor (tirado do site do DCC); [Jackson]
+      * Adicionar link para página pessoal do professor; [Jackson]
+      * Adicionar disciplinas lecionadas pelo professor; [Jackson]
+      * Implementar a interface web; [Gabriel]
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
-      * Implementar sistema de busca;
-      * Projetar e testar a interface do sistema de busca;
-  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação [Filipe]
+      * Implementar sistema de busca; [Gabriel]
+      * Projetar e testar a interface do sistema de busca; [Gabriel]
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
     * Tarefas:
-      * Projetar e testar a interface web;
-      * Implementar a interface web;
+      * Projetar e testar a interface web; [Filipe]
+      * Implementar a interface web; [Gabriel]
