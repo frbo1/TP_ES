@@ -34,7 +34,6 @@ class Professor(models.Model):
 
     def get_absolute_url(self):
         return reverse("planilhao:detail", args=[self.slug])
-
     
 
 class Comentarios(models.Model):
@@ -48,8 +47,5 @@ class Comentarios(models.Model):
 
     class Meta:
         ordering = ("-atualizado",)
-
-    def get_absolute_url(self):
-        return reverse("planilhao:detail", args=[self.slug])
 
     

@@ -1,7 +1,7 @@
 from django.views.generic import DetailView, ListView
 from django.shortcuts import render
 
-from .models import Professor
+from .models import Professor, Comentarios
 
 """class PostListView(ListView):
     model = Post
@@ -15,5 +15,6 @@ def home(request):
 
 def detalhe_professor(request, slug):
     data = Professor.objects.get(slug=slug)
-    return render(request, "detalhe_professor.html", {"prof":data})
+    data2 = Comentarios.objects.all()
+    return render(request, "detalhe_professor.html", {"prof":data, "coment":data2})
     
