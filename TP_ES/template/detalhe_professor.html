@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+    <h1>{{prof.name}}</h1>
+    <h2>{{prof.info}}</h2>
+    <h3>
+        {% for x in coment %}
+            {% if x.prof_id_id == prof.id %} 
+                usuário: {{x.usuario_id}}
+                {{x.comment|linebreaks}}
+            {% endif %}
+            
+        {% endfor %}
+    </h3>
+</div>
+
+{% endblock content %}
