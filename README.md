@@ -10,8 +10,9 @@
    * Avaliar professor;
    * Consultar avaliação do professor;
    * Consultar informações do professor (website);
+   * Postar comentários sobre o professor;
 * Tecnologias:
-   * Front-end: HTML + CSS + Javascript;
+   * Front-end: HTML + CSS + Python;
    * Back-end: Django;
    * Banco de dados: SQLite;
    * Controle de versão: Git;
