@@ -21,10 +21,10 @@
             {% for prof in profs %}
             <div class="col">
                 <div class="card shadow-sm">
-                    {% load static %}
-                    <img src="{% static 'image/default.png' %}" alt="My image">
+                    
+                    <img src="{{ prof.photo.url }}" alt="My image">
                         <div class="card-body">
-                            <p>{{prof.nome}}</p>
+                            <p>{{prof.name}}</p>
                             <p> Didática: </p>
                             <form>
                                 <input type='radio' id='nota1' name='didatica' value='1'>

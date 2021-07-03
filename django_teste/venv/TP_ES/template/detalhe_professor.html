@@ -2,13 +2,13 @@
 
 {% block content %}
 <div class="container pt-5">
-    <h1>{{prof.nome}}</h1>
-    <h1>{{prof.content}}</h1>
+    <h1>{{prof.name}}</h1>
+    <!-- <h1>{{prof.photo}}</h1> -->
     <h3>
         {% for x in coment %}
-            {% if x.professor_id == prof.id %} 
-                usuário: {{x.usuario}}
-                {{x.content|linebreaks}}
+            {% if x.prof_id_id == prof.id %} 
+                usuário: {{x.usuario_id}}
+                {{x.comment|linebreaks}}
                 criado em: {{x.criado}}
                 ultimo edit: {{x.atualizado}}
             {% endif %}
