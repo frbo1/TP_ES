@@ -2,129 +2,123 @@
 
 {% block content %}
 <main>
-    <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">Professores DCC UFMG</h1>
-              <p class="lead text-muted">Com duvida em fazer uma disciplina com algum professor? Então você veio ao lugar certo!</p>
-              <footer>
-              <p> Grupo: <a href="https://github.com/frbo1/TP_ES"
-              title="Repositório do projeto" target="_blank"
-              rel="external" > DCC Planilhão - Engenharia de Software - Ciência da Computação - UFMG - 2021/1 </a> </p>
-              <input id="search_here" class="form-control mb-3" placeholder="type here to search.." />
-            </footer>
-            </div>
-          </div>
-        </section>
-        <div id="cards">
-        <div class="album py-5 bg-light">
-          <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            
-            {% for prof in profs %}
-            <div class="col">
-                <div class="card shadow-sm">
-                    
-                    <img src="{{ prof.photo.url }}" alt="My image">
-                        <div class="card-body">
-                            <p>{{prof.name}}</p>
-                            <p> Didática: </p>
-                            <form>
-                                <input type='radio' id='nota1' name='didatica' value='1'>
-	                            <label for='nota1'> ⭐ </label>
-                                <input type='radio' id='nota2' name='didatica' value='2'>
-	                            <label for='nota2'> ⭐ </label>
-                                <input type='radio' id='nota3' name='didatica' value='3'>
-	                            <label for='nota3'> ⭐ </label>
-                            </form> 
-                                <p> Relação com os alunos: </p>
-                            <form>
-                                <input type='radio' id='nota1' name='relacao' value='1'>
-	                            <label for='nota1'> ❤️  </label>
-                                <input type='radio' id='nota2' name='relacao' value='2'>
-	                            <label for='nota2'> ❤️  </label>
-                                <input type='radio' id='nota3' name='relacao' value='3'>
-	                            <label for='nota3'> ❤️  </label>
-                            </form>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="{{prof.get_absolute_url}}" role="button" class="btn btn-primary btn-sm">Detalhes e Comentários</a>
-                                    </div>
+    <footer>
+      <section class="text-center container">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                      <input id="search_here" class="form-control mb-3" placeholder="Digite o nome do professor" />
+    </footer>
+        </div>
+      </div>
+    </section>
+    <div id="cards">
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        {% for prof in profs %}
+        <div class="col">
+            <div class="card shadow-sm">
+                
+                <img src="{{ prof.photo.url }}" alt="My image" height=250>
+                    <div class="card-body">
+                        <p>{{prof.name}}</p>
+                        <p> Didática: </p>
+                        <form>
+                            <input type='radio' id='nota1' name='didatica' value='1'>
+                            <label for='nota1'> ⭐ </label>
+                            <input type='radio' id='nota2' name='didatica' value='2'>
+                            <label for='nota2'> ⭐ </label>
+                            <input type='radio' id='nota3' name='didatica' value='3'>
+                            <label for='nota3'> ⭐ </label>
+                        </form> 
+                            <p> Relação com os alunos: </p>
+                        <form>
+                            <input type='radio' id='nota1' name='relacao' value='1'>
+                            <label for='nota1'> ❤️  </label>
+                            <input type='radio' id='nota2' name='relacao' value='2'>
+                            <label for='nota2'> ❤️  </label>
+                            <input type='radio' id='nota3' name='relacao' value='3'>
+                            <label for='nota3'> ❤️  </label>
+                        </form>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="{{prof.get_absolute_url}}" role="button" class="btn btn-primary btn-sm">Detalhes e Comentários</a>
                                 </div>
-                        </div>
-                </div>
+                            </div>
+                    </div>
             </div>
-            {% endfor %}
-            </div>
-          </div>
         </div>
+        {% endfor %}
         </div>
+      </div>
+    </div>
+    </div>
 </main>
 {% endblock content %}
 
 {% block scripts %}
 <script>
-    const data = '{{qs_json}}'
-    console.log(data)
+const data = '{{qs_json}}'
+console.log(data)
 
-    const rdata = JSON.parse(data.replace(/&quot;/g, '"'))
-    console.log(rdata)
+const rdata = JSON.parse(data.replace(/&quot;/g, '"'))
+console.log(rdata)
 
-    const input = document.getElementById('search_here')
-    console.log(input)
+const input = document.getElementById('search_here')
+console.log(input)
 
-    let filteredArr = []
+let filteredArr = []
 
-    input.addEventListener('keyup', (e)=>{
-      cards.innerHTML = ""
-      filteredArr = rdata.filter(info=> info['name'].includes(e.target.value))
-      console.log(filteredArr)
-      if (filteredArr.length > 0){
-            filteredArr.map(info=>{
-                cards.innerHTML += `<div class="album py-5 bg-light">
-          <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            
-            <div class="col">
-                <div class="card shadow-sm">
-                    
-                    <img src="media/${info['photo']}" alt="My image">
-                        <div class="card-body">
-                            <p>${info['name']}</p>
-                            <p> Didática: </p>
-                            <form>
-                                <input type='radio' id='nota1' name='didatica' value='1'>
-	                            <label for='nota1'> ⭐ </label>
-                                <input type='radio' id='nota2' name='didatica' value='2'>
-	                            <label for='nota2'> ⭐ </label>
-                                <input type='radio' id='nota3' name='didatica' value='3'>
-	                            <label for='nota3'> ⭐ </label>
-                            </form> 
-                                <p> Relação com os alunos: </p>
-                            <form>
-                                <input type='radio' id='nota1' name='relacao' value='1'>
-	                            <label for='nota1'> ❤️  </label>
-                                <input type='radio' id='nota2' name='relacao' value='2'>
-	                            <label for='nota2'> ❤️  </label>
-                                <input type='radio' id='nota3' name='relacao' value='3'>
-	                            <label for='nota3'> ❤️  </label>
-                            </form>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="${info['slug']}/" role="button" class="btn btn-primary btn-sm">Detalhes e Comentários</a>
-                                    </div>
+input.addEventListener('keyup', (e)=>{
+  cards.innerHTML = ""
+  filteredArr = rdata.filter(info=> info['name'].includes(e.target.value))
+  console.log(filteredArr)
+  if (filteredArr.length > 0){
+        filteredArr.map(info=>{
+            cards.innerHTML += `<div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="col">
+            <div class="card shadow-sm">
+                
+                <img src="media/${info['photo']}" alt="My image">
+                    <div class="card-body">
+                        <p>${info['name']}</p>
+                        <p> Didática: </p>
+                        <form>
+                            <input type='radio' id='nota1' name='didatica' value='1'>
+                            <label for='nota1'> ⭐ </label>
+                            <input type='radio' id='nota2' name='didatica' value='2'>
+                            <label for='nota2'> ⭐ </label>
+                            <input type='radio' id='nota3' name='didatica' value='3'>
+                            <label for='nota3'> ⭐ </label>
+                        </form> 
+                            <p> Relação com os alunos: </p>
+                        <form>
+                            <input type='radio' id='nota1' name='relacao' value='1'>
+                            <label for='nota1'> ❤️  </label>
+                            <input type='radio' id='nota2' name='relacao' value='2'>
+                            <label for='nota2'> ❤️  </label>
+                            <input type='radio' id='nota3' name='relacao' value='3'>
+                            <label for='nota3'> ❤️  </label>
+                        </form>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="${info['slug']}/" role="button" class="btn btn-primary btn-sm">Detalhes e Comentários</a>
                                 </div>
-                        </div>
-                </div>
+                            </div>
+                    </div>
             </div>
-            </div>
-          </div>
-        </div>`
-            })
-        } else {
-            cards.innerHTML = "<b>Nenhum professor com esse nome...</b>"
-        }
-    })
+        </div>
+        </div>
+      </div>
+    </div>`
+        })
+    } else {
+        cards.innerHTML = "<b>Nenhum professor com esse nome...</b>"
+    }
+})
 
 </script>
 {% endblock scripts %}
