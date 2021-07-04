@@ -1,11 +1,13 @@
 from django.views.generic import DetailView, ListView
 from django.shortcuts import render
+import json
 
 from .models import Professores, Comentarios
 
 def home(request):
     data = Professores.objects.all()
-    return render(request, "index.html", {"profs":data})
+    data2 = json.dumps(list(Professores.objects.values()))
+    return render(request, "index.html", {"profs":data, "qs_json":data2})
  
 
 def detalhe_professor(request, slug):

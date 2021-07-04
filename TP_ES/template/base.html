@@ -1,29 +1,3 @@
-
-{% comment %} {% load static %}
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>{% block title %}{% endblock %}</title>
-    <link href="{% static 'css/planilhao.css' %}" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <h1>Grupo ES</h1>
-    </header>
-
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-    
-</body>
-
-</html> {% endcomment %}
-
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -38,17 +12,22 @@
   <body>
     
 
-<header>
+    <header>
   
-</header>
+    </header>
 
-{% block content %}{% endblock content %}      
+    {% block content %}{% endblock content %}
+    {% block scripts %}{% endblock scripts %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <footer>
 	    <p> Link para Repositório: <a href="https://github.com/frbo1/TP_ES"
-		title="Repositório do projeto" target="_blank"
-		rel="external" > Planilhao DCC </a> </p>
-	</footer>
+		  title="Repositório do projeto" target="_blank"
+		  rel="external" > Planilhao DCC </a> </p>
+	  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
