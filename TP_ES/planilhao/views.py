@@ -8,7 +8,9 @@ def home(request):
     data = Professores.objects.all()
     data2 = json.dumps(list(Professores.objects.values()))
     return render(request, "index.html", {"profs":data, "qs_json":data2})
- 
+
+def about(request):
+    return render(request, "sobre.html")
 
 def detalhe_professor(request, slug):
     data = Professores.objects.get(slug=slug)

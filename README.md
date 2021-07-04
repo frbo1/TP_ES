@@ -22,7 +22,7 @@
   * História: Como usuário, eu gostaria de consultar as avaliações do professor ✔️
   * História: Como usuário, eu gostaria de verificar as informações do professor ✔️
   * História: Como usuário, eu gostaria de pesquisar um professor específico ✔️
-  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação ❌
+  * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação ✔️
   * História: Como admin, eu gostaria de remover avaliações ✔️
   * História: Como admin, eu gostaria de editar as informações de um professor ✔️
   * História: Como admin, eu gostaria de adicionar ou remover um professor ✔️
