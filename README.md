@@ -32,9 +32,9 @@
     * Tarefas:
       * Projetar e testar a interface web; [Filipe] ✔️
       * Instalar banco de dados, projetar e criar tabelas; [Jackson] ✔️
-      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe] ❌
-      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe] ❌
-      * Implementar sistema de envio de comentários sobre o professor; [Raphael] ❌
+      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe] (P)
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe] (P)
+      * Implementar sistema de envio de comentários sobre o professor; [Raphael] (P)
       * Implementar a interface web; [Gabriel] ✔️
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
