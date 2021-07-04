@@ -3,16 +3,20 @@
 {% block content %}
 <div class="container pt-5">
     <h1>{{prof.name}}</h1>
-    <h2>{{prof.info}}</h2>
-    <h3>
+    <img src="{{ prof.photo.url }}" alt="My image">
+    <h3>{{prof.info}}</h3>
+    <h5>
         {% for x in coment %}
             {% if x.prof_id_id == prof.id %} 
-                usuário: {{x.usuario_id}}
-                {{x.comment|linebreaks}}
+                usuário: {{x.usuario}}<br>
+                {{x.comment}}<br>  
+                Criado em    : {{x.criado}} | 
+                Atualizado em: {{x.atualizado}}
+                <br>_________________________<br>
             {% endif %}
             
         {% endfor %}
-    </h3>
+    </h5>
 </div>
 
 {% endblock content %}
