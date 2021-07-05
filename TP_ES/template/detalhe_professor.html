@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<style>
+    textarea{
+        display:block;
+    }
+</style>
 <div class="container pt-5">
     <h2>{{prof.name}}</h2>
     <img src="{{ prof.photo.url }}" alt="My image">
@@ -12,11 +17,14 @@
                 {{x.comment}} <br> <br> 
                 Criado em    : {{x.criado}} | 
                 Atualizado em: {{x.atualizado}}
-                <br> ---------------------------------------------------------------------- <br>
+                <br> -------------------------------------------------------------------------------------- <br>
             {% endif %}
-            
         {% endfor %}
     </p>
+    <form>
+        <textarea name="'textarea'" rows=3 cols=100> Escreva seu comentário aqui! </textarea>
+        <button type="submit"> Enviar comentário. </button>
+    </form>
 </div>
 
 {% endblock content %}
