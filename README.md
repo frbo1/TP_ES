@@ -60,3 +60,9 @@
   * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
     * Tarefas:
       * Implementar a interface web; [Filipe, Gabriel] ✔️
+
+## Diagrama da Arquitetura do Sistema:
+![image](https://user-images.githubusercontent.com/42478443/124494113-d2feb580-dd8c-11eb-92eb-5d0aa6bb9e23.png)
+![image](https://user-images.githubusercontent.com/42478443/124494320-135e3380-dd8d-11eb-8614-7cea8772961b.png)
+![image](https://user-images.githubusercontent.com/42478443/124494546-5b7d5600-dd8d-11eb-8a89-d91280c8b775.png)
+
