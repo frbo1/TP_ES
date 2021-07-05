@@ -19,7 +19,7 @@
 
 ## Backlog do produto:
   * História: Como usuário, eu gostaria de avaliar o professor (P)
-  * História: Como usuário, eu gostaria de consultar as avaliações do professor ✔️
+  * História: Como usuário, eu gostaria de consultar as avaliações do professor (P)
   * História: Como usuário, eu gostaria de verificar as informações do professor ✔️
   * História: Como usuário, eu gostaria de pesquisar um professor específico ✔️
   * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação ✔️
@@ -60,7 +60,16 @@
   * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
     * Tarefas:
       * Implementar a interface web; [Filipe, Gabriel] ✔️
-
+  * História: Como admin, eu gostaria de remover avaliações
+    * Tarefas:
+      * Implementar a interface de admin; [Raphael] ✔️  
+  * História: Como admin, eu gostaria de editar as informações de um professor
+    * Tarefas:
+      * Implementar a interface de admin; [Raphael] ✔️
+  * História: Como admin, eu gostaria de adicionar ou remover um professor
+    * Tarefas:
+      * Implementar a interface de admin; [Raphael] ✔️
+      
 ## Diagrama da Arquitetura do Sistema:
 ![image](https://user-images.githubusercontent.com/42478443/124494113-d2feb580-dd8c-11eb-92eb-5d0aa6bb9e23.png)
 ![image](https://user-images.githubusercontent.com/42478443/124494320-135e3380-dd8d-11eb-8614-7cea8772961b.png)
