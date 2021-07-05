@@ -18,7 +18,7 @@
    * Controle de versão: Git;
 
 ## Backlog do produto:
-  * História: Como usuário, eu gostaria de avaliar o professor ❌
+  * História: Como usuário, eu gostaria de avaliar o professor (P)
   * História: Como usuário, eu gostaria de consultar as avaliações do professor ✔️
   * História: Como usuário, eu gostaria de verificar as informações do professor ✔️
   * História: Como usuário, eu gostaria de pesquisar um professor específico ✔️
