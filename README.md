@@ -30,32 +30,33 @@
 ## Backlog do sprint:
   * História: Como usuário, eu gostaria de avaliar o professor 
     * Tarefas:
-      * Projetar e testar a interface web; [Filipe] ✔️
+      * Implementar a interface web; [Filipe] ✔️
       * Instalar banco de dados, projetar e criar tabelas; [Jackson] ✔️
-      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe] (P)
-      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe] (P)
+      * Implementar interface da avaliação da didática ("com estrela"); [Filipe, Gabriel] ✔️
+      * Implementar interface da avaliação da relação com alunos ("com coração"); [Filipe, Gabriel] ✔️
+      * Implementar sistema de avaliação da didática ("com estrela"); [Raphael, Gabriel] ❌
+      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Raphael, Gabriel] ❌
       * Implementar sistema de envio de comentários sobre o professor; [Raphael] (P)
-      * Implementar a interface web; [Gabriel] ✔️
+      * Implementar a interface web e conectar com backend; [Gabriel] ✔️
   * História: Como usuário, eu gostaria de consultar as avaliações do professor
     * Tarefas:
       * Popular banco de dados com as avaliações feitas no planilhão; [Jackson] ✔️
-      * Projetar e testar a interface web; [Filipe] ✔️
-      * Implementar sistema de avaliação da didática ("com estrela"); [Filipe] ❌
-      * Implementar sistema de avaliação da relação com alunos ("com coração"); [Filipe] ❌
+      * Implementar interface da avaliação da didática ("com estrela"); [Filipe] ❌
+      * Implementar sistema de verificar a avaliação da didática ("com estrela"); [Raphael, Gabriel] ❌
+      * Implementar sistema de verificar avaliação da relação com alunos ("com coração"); [Raphael, Gabriel] ❌
       * Implementar menu pull down ao clicar sobre a foto do professor (mostrando os comentários já existentes); [Raphael] ✔️
-      * Implementar a interface web; [Gabriel] ✔️
+      * Implementar a interface web e conectar com backend; [Raphael, Gabriel] ✔️
   * História: Como usuário, eu gostaria de verificar as informações do professor 
     * Tarefas:
-      * Projetar e testar a interface web; [Filipe] ✔️
+      * Implementar a interface web; [Filipe] ✔️
       * Adicionar nome e foto do professor (tirado do site do DCC); [Jackson] ✔️
       * Adicionar link para página pessoal do professor; [Jackson] ❌
       * Adicionar área de estudo do professor; [Jackson] ✔️
-      * Implementar a interface web; [Gabriel] ✔️
+      * Implementar a interface web e conectar com backend; [Raphael, Gabriel] ✔️
   * História: Como usuário, eu gostaria de pesquisar um professor específico
     * Tarefas: 
       * Implementar sistema de busca; [Gabriel] ✔️
       * Projetar e testar a interface do sistema de busca; [Gabriel] ✔️
   * História: Como usuário, eu gostaria de ler sobre o site e sua política de moderação
     * Tarefas:
-      * Projetar e testar a interface web; [Filipe] ✔️
-      * Implementar a interface web; [Gabriel] ✔️
+      * Implementar a interface web; [Filipe, Gabriel] ✔️
